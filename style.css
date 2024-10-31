@@ -15,7 +15,11 @@ body {
     align-items: center;
     margin: 0;
 }
-
+.logo {
+    max-width: 150px; /* Limita la larghezza massima */
+    width: 100%;      /* Fa sì che si ridimensioni automaticamente */
+    height: auto;     /* Mantiene le proporzioni */
+}
 /* Header e Navigazione */
 header {
     background: linear-gradient(135deg, #fef5eb, #fef5eb);
