@@ -66,6 +66,33 @@ section {
     width: 100%;
     margin-bottom: 2rem;
 }
+/* Stile per il body */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Stile per il contenitore dei link */
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribuisce i link in modo uniforme */
+    align-items: center; /* Centra i link orizzontalmente */
+    height: 100vh; /* Fa sì che occupino tutta l'altezza della pagina */
+}
+
+/* Stile per i link */
+.menu a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6f61; /* Colore per l'hover */
+}
 
 /* Stile per menu e articoli */
 .menu-item {
@@ -92,14 +119,17 @@ section {
     font-size: 1rem;
 }
 
-/* Footer */
+
 footer {
-    background: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    font-size: 0.9rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10; /* Per garantire che stia sopra altri elementi, se necessario */
 }
 
 footer a {
@@ -115,7 +145,7 @@ footer a:hover {
 /* Pulsanti e animazioni */
 nav a,
 footer a {
-    position: relative;
+    position: sticky;
 }
 
 nav a::after,
