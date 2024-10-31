@@ -93,6 +93,10 @@ body, html {
 .menu a:hover {
     color: #ff6f61; /* Colore per l'hover */
 }
+.menu a:last-child {
+    margin-bottom: 2rem; /* Aggiungi lo spazio desiderato in basso */
+}
+
 
 /* Stile per menu e articoli */
 .menu-item {
